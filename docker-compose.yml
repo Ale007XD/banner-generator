@@ -1,1 +1,15 @@
+version: '3.8'
 
+services:
+  web:
+    build: ./app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
+    command: gunicorn --bind :5000 --workers 1 --threads 8 app:app
+
+volumes:
+  app-data:
