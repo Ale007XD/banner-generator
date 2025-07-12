@@ -22,8 +22,8 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 SMTP_CONFIG = {
     'server': 'smtp.gmail.com',
     'port': 587,
-    'username': 'your_email@gmail.com',
-    'password': 'your_app_password',
+    'username': 'alexdelov.print@gmail.com',
+    'password': '21896_Saha',
     'sender': 'banner_generator@example.com',
     'admin_email': 'alex.deloverov@gmail.com'
 }
