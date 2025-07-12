@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Баннер готов!</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .preview { max-width: 90%; margin: 20px auto; border: 1px solid #ccc; }
+        .message { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Ваш баннер успешно создан!</h1>
+    <div class="message">
+        <p>Превью баннера отправлено на вашу электронную почту.</p>
+        <p>Файлы для печати отправлены администратору.</p>
+    </div>
+    <img class="preview" src="data:image/png;base64,{{ preview }}" alt="Превью баннера">
+    <p><a href="/">Создать новый баннер</a></p>
+</body>
+</html>
