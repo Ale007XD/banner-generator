@@ -43,7 +43,7 @@ FONTS = {
     'Golos Text': 'fonts/GolosText.ttf',
     'Tenor Sans': 'fonts/TenorSans.ttf',
     'Fira Sans': 'fonts/FiraSans.ttf',
-    'Igra Sans': 'fonts/IgraSans.ttf'
+    'Igra Sans': 'fonts/IgraSans.otf'
 }
 
 # Регистрация шрифтов для ReportLab
