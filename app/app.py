@@ -202,8 +202,9 @@ def create_svg(width_mm, height_mm, bg_color, text_lines, text_color, font_name)
         dwg.add(text_group)
     
     # Комментарии с CMYK значениями
-    dwg.add(dwg.comment(f"Background CMYK: {COLOR_MAP[bg_color]['cmyk']}"))
-    dwg.add(dwg.comment(f"Text CMYK: {COLOR_MAP[text_color]['cmyk']}"))
+    dwg.add(dwg.defs(svgwrite.container.Defs()))
+    dwg.defs.add(dwg.comment(f"Background CMYK: {COLOR_MAP[bg_color]['cmyk']}"))
+    dwg.defs.add(dwg.comment(f"Text CMYK: {COLOR_MAP[text_color]['cmyk']}"))
     
     return dwg.tostring()
 
